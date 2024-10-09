@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo-icon" src="" alt="" />
+      <span>Clear your mind</span>
+      <button class="add-content-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#000"
+        >
+          <path
+            d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+          />
+        </svg>
+      </button>
+    </header>
+    <div class="main-container">
+      <div class="left-side">
+        <div class="left-side-content">
+          <button autofocus class="home-btn btn-focus" id="home">Home</button>
+          <span class="home-counter">0</span>
+        </div>
+        <div class="left-side-content">
+          <button class="today-btn" id="today">Today</button>
+          <span class="today-counter">0</span>
+        </div>
+        <div class="left-side-content">
+          <button class="week-btn" id="week">Week</button>
+          <span class="week-counter">0</span>
+        </div>
+        <div class="left-side-content">
+          <button class="note-btn" id="note">Notes</button>
+          <span class="note-counter">0</span>
+        </div>
+        <div class="left-side-content">
+          <button class="projects-btn" id="project">Projects</button>
+          <span class="project-counter">0</span>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="right-side-content-note">
+          <div class="right-side-content-note-col">
+            <div class="note" contenteditable="true">
+              <h2>some title</h2>
+              <br />
+            </div>
+            <div class="note" contenteditable="true"></div>
+            <div class="note" contenteditable="true"></div>
+            <div class="note" contenteditable="true"></div>
+          </div>
+          <div class="right-side-content-note-col">
+            <div class="note" contenteditable="true"></div>
+            <div class="note" contenteditable="true"></div>
+            <div class="note" contenteditable="true"></div>
+            <div class="note" contenteditable="true"></div>
+          </div>
+          <div class="right-side-content-note-col">
+            <div class="note" contenteditable="true"></div>
+            <div class="note" contenteditable="true"></div>
+            <div class="note" contenteditable="true"></div>
+            <div class="note" contenteditable="true"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <dialog class="dialog-for-add-btn">
+      <header>
+        <h2 class="dialog-title">Create a new...</h2>
+        <button autofocus class="dialog-close-btn">X</button>
+      </header>
+      <div class="main-container">
+        <div class="left-side">
+          <div class="left-side-content">
+            <button class="add-to-do-btn btn-focus" id="add_new_to_do">
+              TO-DO
+            </button>
+          </div>
+          <div class="left-side-content">
+            <button class="add-note-btn" id="add_new_note">Note</button>
+          </div>
+          <div class="left-side-content">
+            <button class="add-project-btn" id="add_new_project">
+              Project
+            </button>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="to-do-input">
+            <textarea class="new-to-do-title" placeholder="Title..."></textarea>
+            <textarea
+              class="new-to-do-details"
+              placeholder="Details..."
+            ></textarea>
+            <div class="filed-container">
+              <button id="submit-to-do">Add TO-DO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="to-do-details-dialog" id="toDoDetailsDialog">
+      <div class="to-do-dialog-header">
+        <h2 id="toDoDialogTitle">To-Do Title</h2>
+      </div>
+      <div class="to-do-dialog-body">
+        <p>
+          <strong>Details:</strong>
+          <span id="toDoDialogDetails">This is the to-do description.</span>
+        </p>
+        <p>
+          <strong>Priority:</strong>
+          <span class="to-do-priority" id="toDoDialogPriority">High</span>
+        </p>
+        <p>
+          <strong>Due Date:</strong>
+          <span id="toDoDialogDueDate">2024-10-10</span>
+        </p>
+      </div>
+      <div class="to-do-dialog-footer">
+        <button class="to-do-close-btn" id="closeToDoDialogBtn">Close</button>
+      </div>
+    </dialog>
+  </body>
+</html>

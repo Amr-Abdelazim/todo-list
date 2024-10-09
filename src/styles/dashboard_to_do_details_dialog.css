@@ -1,0 +1,65 @@
+.to-do-details-dialog {
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.to-do-dialog-header {
+    background-color: #272167;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.to-do-dialog-body {
+    margin-top: 10px;
+}
+
+.to-do-dialog-body p {
+    margin: 10px 0;
+}
+
+.to-do-priority {
+    font-weight: bold;
+    color: #272167;
+}
+
+.to-do-dialog-footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.to-do-close-btn {
+    background-color: #272167;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.to-do-close-btn:hover {
+    background-color: #3b3f97;
+}
+
+.to-do-dialog-body {
+    margin-top: 10px;
+}
+
+.to-do-dialog-body p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+#toDoDialogDetails {
+    display: block;
+    max-height: 100px;
+    overflow-y: auto;
+    padding-right: 10px;
+}

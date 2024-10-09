@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    background-color: #272167;
+    width: 100%;
+    height: 20%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+header .logo-icon {
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+}
+header .add-content-btn{
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 0;
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+header .menu{
+    margin-right: 25px;
+        margin-top: 50px;
+}
+header svg {
+    width: 50px;
+    height: 50px;
+    fill: whitesmoke;
+    cursor: pointer;
+    border-radius: 30px;
+}
+header svg:hover{
+    fill:rgb(150,150,150);
+}
+header .dots-icon:hover,header .dots-icon:focus{
+    background-color: whitesmoke;
+}
+header span {
+    margin: 0 auto;
+    margin-top: 3%;
+    font-size: 32px;
+    color: white;
+
+}
