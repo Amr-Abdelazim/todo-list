@@ -119,7 +119,7 @@ function dialog_for_add_content() {
     function load_add_to_do(dialog) {
         const to_do_input = document.querySelector(".to-do-input");
         to_do_input.innerHTML = `
-            <textarea class="new-to-do-title" placeholder="Title..."></textarea>
+            <textarea class="new-to-do-title" placeholder="Title..." maxlength="40"></textarea>
             <textarea
               class="new-to-do-details"
               placeholder="Details..."
@@ -128,12 +128,12 @@ function dialog_for_add_content() {
             <div class="filed-container">
               <label for="priority">Priority:</label>
               <button class="priority-low" value="low">Low</button>
-              <button class="priority-medium" value="medium">Medium</button>
+              <button class="priority-medium selected-priority-medium" value="medium">Medium</button>
               <button class="priority-high" value="high">High</button>
             </div>
             <div class="filed-container">
               <label for="due-date">Due Date:</label>
-              <input type="date" class="to-do-date" />
+              <input type="date" class="to-do-date" required/>
             </div>
             <div class="filed-container">
               <button id="submit-to-do">Add TO-DO</button>
@@ -146,7 +146,7 @@ function dialog_for_add_content() {
         dialog_title.textContent = "Edit...";
         const to_do_input = document.querySelector(".to-do-input");
         to_do_input.innerHTML = `
-            <textarea class="new-to-do-title" placeholder="Title...">${cur_to_do.title}</textarea>
+            <textarea class="new-to-do-title" placeholder="Title..." maxlength="40">${cur_to_do.title}</textarea>
             <textarea
               class="new-to-do-details"
               placeholder="Details..."
@@ -160,7 +160,7 @@ function dialog_for_add_content() {
             </div>
             <div class="filed-container">
               <label for="due-date">Due Date:</label>
-              <input type="date" class="to-do-date" value = "${cur_to_do.str_date}"/>
+              <input type="date" class="to-do-date" value = "${cur_to_do.str_date}" required/>
             </div>
             <div class="filed-container">
               <button class="edit-to-do" id=${cur_to_do.id}>Edit TO-DO</button>
